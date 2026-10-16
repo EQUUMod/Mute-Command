@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "mute-command",
+	"version": "${version}",
+	"name": "Artisans SMP Mod",
+	"description": "The official Artisans SMP Mod",
+	"authors": [
+		"Marax"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/mute-command/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"marax.mutecommand.MuteCommandMod"
+		],
+		"fabric-datagen": [
+			"marax.mutecommand.MuteCommandModDataGenerator"
+		]
+	},
+	"mixins": [
+      "mute-command.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
